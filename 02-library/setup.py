@@ -14,6 +14,9 @@ setup(
   packages=['cs506'],
   version='0.0.1',
   description='Run some cs506 algorithms',
+  entry_points={
+    'console_scripts': ['cs506=cs506.cli:main'],
+  },
   install_requires=[],
   python_requires='>=3.6, <4',
   setup_requires=['pytest-runner'],
